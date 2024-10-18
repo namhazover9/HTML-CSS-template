@@ -79,13 +79,19 @@ body {
 }
 
 .products {
+  background-color: aliceblue;
+  padding: 50px 0;
   .container {
     margin: 0 5%;
     display: flex;
     justify-content: space-around;
     .section-heading {
       .section-title {
+        font-size: 36px;
 
+        span {
+          font-size: 36px;
+        }
       }
       .description {
 
