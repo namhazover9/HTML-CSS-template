@@ -105,6 +105,97 @@
   .signup:hover {
     background-color: #007a40;
   }
+
+  /* ////////////////////////////////////////////////////////SECTION SERVICE////////////////////////////////////////////////////////// */
+  .slider-show {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color: #000000;
+  }
+  .slider {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+}
+
+.slide {
+    flex: 0 0 100%; /* Chiều rộng mỗi slide chiếm 100% */
+    display: flex;
+    align-items: center;
+    background-color: #F5F7FA;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.content-service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.text-section-service {
+    max-width: 50%;
+}
+
+.text-section-service h1{
+  color: #4D4D4D;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.text-section-service span{
+  color: #4CAF4F;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.text-section-service p{
+  color: #717171;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.text-section-service button {
+  color: #ffffff;
+  font-size: 1em;
+  background-color: #4CAF4F;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  width: 8em; /* Đặt chiều rộng cố định cho button */
+  height: 3em;
+}
+
+.image-section-service img {
+    max-width: 100%;
+    height: auto;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
   
   .ml-nav {
     margin-left: 60px;
