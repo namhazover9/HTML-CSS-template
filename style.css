@@ -9,25 +9,37 @@
     background-color: #f5f5f5;
   }
   
+  /* Navbar Section - Nam Le */
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #f5f7fa;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #E0E0E0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    
   }
   
   .logo {
     display: flex;
     align-items: center;
+    width: 15%;
   }
   
   .logo img {
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     margin-right: 10px;
+  }
+
+  .logo img:hover {
+    opacity: 0.8;
   }
   
   .logo span {
@@ -52,21 +64,37 @@
   }
   
   .nav-links a:hover {
-    color: #00aaff;
+    color: #00a651;
   }
   
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #00aaff;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+
   .auth-buttons {
     display: flex;
     align-items: center;
   }
   
-  .auth-buttons .login {
+  .login {
     margin-right: 15px;
     text-decoration: none;
-    color: #00aaff;
+    color: #00aaff !important;
   }
   
-  .auth-buttons .signup {
+  .signup {
     background-color: #00a651;
     color: white;
     padding: 10px 15px;
@@ -74,7 +102,7 @@
     text-decoration: none;
   }
   
-  .auth-buttons .signup:hover {
+  .signup:hover {
     background-color: #007a40;
   }
 
@@ -142,8 +170,6 @@
   height: 3em;
 }
 
-
-
 .image-section-service img {
     max-width: 100%;
     height: auto;
@@ -170,3 +196,72 @@
 .dot.active {
     background-color: #333;
 }
+  
+  .ml-nav {
+    margin-left: 60px;
+  }
+  /* Ẩn menu icon khi trên màn hình lớn */
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Responsive cho màn hình nhỏ */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    /* .auth-buttons {
+      flex-direction: column;
+    }
+  
+    .auth-buttons .login {
+      margin-bottom: 10px;
+    } */
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .ml-nav {
+      margin: auto;
+    }
+    /* .auth-buttons {
+      display: none;
+    }
+  
+    .auth-buttons.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 200px;
+      right: 0;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    } */
+
+    .logo {
+      width: 30%;
+    }
+  }
+  
