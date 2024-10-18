@@ -77,3 +77,68 @@
   .auth-buttons .signup:hover {
     background-color: #007a40;
   }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.dh-content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.dh-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+}
+
+.dh-image-container img {
+    max-width: 600px; 
+    margin-right: 40px; 
+}
+
+.dh-text-container {
+    max-width: 600px;
+}
+
+.dh-text-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.dh-text-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.dh-learn-more-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dh-learn-more-btn:hover {
+    background-color: #45a049;
+}
