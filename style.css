@@ -77,3 +77,64 @@
   .auth-buttons .signup:hover {
     background-color: #007a40;
   }
+  /* ////////////////////--Feature */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Background for the whole page */
+}
+.dh-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff; /* White background for both sections */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Add slight shadow for separation */
+}
+.dh-illustration {
+    flex: 1;
+    background-color: #fff; /* White background for the illustration */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dh-illustration img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Set max width for the image */
+}
+.dh-content {
+    flex: 1;
+    padding-left: 40px;
+    background-color: #fff; /* White background for the text */
+    padding: 20px;
+}
+.dh-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+.dh-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.dh-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+}
+.dh-button:hover {
+    background-color: #45a049;
+}
