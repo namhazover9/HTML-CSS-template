@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
 <body>
     <nav class="navbar">
         <div class="logo">
@@ -25,11 +24,14 @@
         </div>
       </nav>
 
-      <section id="hoangnam-testimonial" class="hoangnam-testimonial">
+      <!-- Section hoangnam-Testimonial-customers -->
+      <section id="hoangnam-testimonial-customers" class="hoangnam-testimonial-customers">
+      <div class="testimonial-content">
         <div class="testimoial-left">
-            <img src="./assests//img/testimonial-img.jpg" alt="testimonial">
-        </div>
-        <div class="testimoial-right">
+          <img src="./images/testimonial-img.jpg" alt="testimonial">
+      </div>
+      <div class="testimoial-right">
+          <div class="about-author">
             <p>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. 
               Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. 
               Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. 
@@ -37,13 +39,59 @@
               Quisque vulputate odio neque, eget efficitur libero condimentum id. 
               Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
               <h4>Tim Smith</h4>
-              <p>British Dragon Boat Racing Association</p>
-              <div class="testimoial-logo">
-                <img src="./assests/img/testimonial-logo1.png" alt="logo1">
-                <img src="./assests/img/testimonial-logo2.png" alt="logo1">
-                
-              </div>
-        </div>
+              <br/>
+             <span> British Dragon Boat Racing Association</span>
+          </div>
+            <div class="testimoial-logo">
+              <img style="height: 40px; width: 40px;" src="./images/Logo1.png" alt="logo1">
+              <img style="width: 40px; height: 28px;" src="./images/Logo 2.png" alt="logo2">
+              <img style="width: 55px; height: 30px;" src="./images//Logo 3.png" alt="logo3">
+              <img style="width: 47px; height: 29px;" src="./images/Logo 4.png" alt="logo4">
+              <img style="width: 41px; height: 27px;" src="./images/Logo 5.png" alt="logo5">
+              <img style="width: 52px; height: 20px;" src="./images/Logo 6.png" alt="logo6">
+              <a href="#">Meet all customers →</a>
+            </div>
+      </div>
+      </div>
       </section>
+
+      <!-- Section hoangnam-testimonial-community-update  -->
+<section class="hoangnam-communityUpdate" id="hoangnam-communityUpdate">
+  <div class="container">
+    <div class="communityUpdate-content">
+      <div class="content-text">
+        <h2>Caring is the new marketing</h2>
+        <p>The Nexcent blog is the best place to read about the latest membership insights, trends and more. 
+          See who's joining the community, read about how our community is increasing their membership income and lots more.
+        </p>
+        <br/>
+      </div>
+      <div class="content-image">
+        <!-- Images will display here -->
+      </div>
+    </div>
+  </div>
+</section>
+      <script>
+        var imgages = document.querySelector('.content-image');
+        var imageList =  ['images/community-img1.jpg', 'images/community-img2.jpg', 'images/community-img3.jpg'];
+        var readmorelist = ['Creating Streamlined Safeguarding Processes with OneRen', 
+                            'What are your safeguarding responsibilities and how can you manage them?',
+                            'Revamping the Membership Model with Triathlon Australia'];
+      
+        imageList.map((value, index) => {
+          imgages.innerHTML += `
+          <div class="card">
+              <img src="${value}" alt="Image">
+              <div class="card-content">
+                <h3>${readmorelist[index]}</h3>
+                <a style="color: #4CAF4F" href="#" class="readmore">Readmore →</a>
+              </div>
+            </div>
+          `;
+        });
+      </script>
 </body>
+
 </html>
+
