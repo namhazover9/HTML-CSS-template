@@ -1,14 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
   /* -----------------Navbar Section - Nam Le----------------- */
   .navbar {
     display: flex;
@@ -23,15 +23,15 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    
+
   }
-  
+
   .logo {
     display: flex;
     align-items: center;
     width: 15%;
   }
-  
+
   .logo img {
     width: 100%;
     height: 100%;
@@ -41,32 +41,32 @@
   .logo img:hover {
     opacity: 0.8;
   }
-  
+
   .logo span {
     font-size: 24px;
     font-weight: bold;
     color: #000000;
   }
-  
+
   .nav-links {
     list-style: none;
     display: flex;
   }
-  
+
   .nav-links li {
     margin-left: 20px;
   }
-  
+
   .nav-links a {
     text-decoration: none;
     color: #000000;
     font-size: 16px;
   }
-  
+
   .nav-links a:hover {
     color: #00a651;
   }
-  
+
   .nav-links a::after {
     content: '';
     position: absolute;
@@ -77,7 +77,7 @@
     bottom: 0;
     transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
   }
-  
+
   .nav-links a:hover::after {
     width: 100%;
     left: 0;
@@ -87,13 +87,13 @@
     display: flex;
     align-items: center;
   }
-  
+
   .login {
     margin-right: 15px;
     text-decoration: none;
     color: #00aaff !important;
   }
-  
+
   .signup {
     background-color: #00a651;
     color: white;
@@ -101,7 +101,7 @@
     border-radius: 5px;
     text-decoration: none;
   }
-  
+
   .signup:hover {
     background-color: #007a40;
   }
@@ -248,9 +248,107 @@
   cursor: pointer;
 }
 
+/*----------------------------------- PRODUCT SECTION - Việt Đức--------------------------------- */
+
+.vietduc-products-achievements {
+  margin-bottom: 50px;
+  background-color: #F5F7FA;
+  padding: 50px 0;
+
+  .products-container {
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .section-heading {
+      .section-title {
+        font-size: 36px;
+        color: #4d4d4d;
+        p {
+          font-size: 36px;
+          color: #007a40;
+        }
+      }
+      .description {
+        font-weight: 400;
+      }
+    }
+    .counts {
+      width: 35%;
+      display: flex;
+      justify-content: space-between;
+      .column-products {
+        color: #4d4d4d;
+        .members {
+          display: flex;
+          margin-bottom: 20px;
+        }
+        .clubs {
+          display: flex;
+          margin-bottom: 20px;
+        }
+        .events-booking {
+          display: flex;
+        }
+        .payments {
+          margin-right: 4%;
+          display: flex;
+        }
+
+        p {
+          color: #717171;
+        }
+
+        img {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+.vietduc-products-calender {
+  .products-container {
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .img-calender {
+      width: 80%;
+      margin: 0 5%;
+      img {
+        height: auto;
+        border-radius: 5%;
+      }
+    }
+    .content-calender {
+      padding: 0 4%;
+
+      .title-calender {
+        color: #4d4d4d;
+        font-size: 36px;
+        font-weight: 600;
+      }
+
+      .discreption-calender {
+        margin: 20px 0;
+        color: #717171;
+        font-size: 14px;
+      }
+
+      .btn-calender {
+        color: #e0e0e0;
+        width: 151px;
+        height: 52px;
+        background-color: #4caf4f;
+        border: 2px solid #ffffff;
+      }
+    }
+  }
+}
 
 /* -----------------Responsive cho màn hình nhỏ----------------- */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -283,5 +381,437 @@
     width: 30%;
   }
     
+
+  /* thiết bị có chiều rộng màn hình từ 768 đến 1024 pixel */
+  .vietduc-products-achievements {
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    background-color: #F5F7FA;
+    padding: 50px 0;
+
+    .products-container {
+      margin: 0 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      .section-heading {
+        .section-title {
+          font-size: 36px;
+          color: #4d4d4d;
+          p {
+            font-size: 36px;
+            color: #4CAF4F;
+          }
+        }
+        .description {
+          font-weight: 400;
+        }
+      }
+      .counts {
+        width: 100%;
+        justify-content: space-between;
+        .column-products {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          color: #4d4d4d;
+          .members {
+            display: flex;
+
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+          .clubs {
+            flex-wrap: wrap;
+            display: flex;
+          }
+          .events-booking {
+            flex-wrap: wrap;
+            display: flex;
+          }
+          .payments {
+            flex-wrap: wrap;
+            display: flex;
+          }
+
+          p {
+            color: #717171;
+          }
+
+          img {
+            margin-right: 15px;
+          }
+        }
+        .column-products-1 {
+        }
+      }
+    }
+  }
+
+  /* --------------------------------------- */
+  .vietduc-products-calender {
+    .products-container {
+      margin: 5%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .img-calender {
+        margin: 0 5% 3%;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 5%;
+        }
+      }
+      .content-calender {
+        padding: 0 4%;
+
+        .title-calender {
+          color: #4d4d4d;
+          font-size: 36px;
+          font-weight: 600;
+        }
+
+        .discreption-calender {
+          margin: 20px 0;
+          color: #717171;
+          font-size: 14px;
+        }
+
+        .btn-calender {
+          color: #e0e0e0;
+          width: 151px;
+          height: 52px;
+          background-color: #4caf4f;
+          border: 2px solid #ffffff;
+        }
+      }
+    }
+  }
+
+  .vietduc-products-achievements {
+    margin-bottom: 50px;
+    background-color: #F5F7FA;
+    padding: 50px 0;
+
+    .products-container {
+      margin: 0 5%;
+      text-align: center;
+      .section-heading {
+        margin-bottom: 5%;
+        .section-title {
+          font-size: 24px;
+          color: #4d4d4d;
+          p {
+            font-size: 24px;
+            color: #007a40;
+          }
+        }
+        .description {
+          font-weight: 400;
+        }
+      }
+      .counts {
+        display: flex;
+        justify-content: space-around;
+        .column-products {
+          width: 50%;
+          display: flex;
+          justify-content: space-around;
+          color: #4d4d4d;
+          .members {
+            text-align: center;
+            .members-info {
+              .members-number {
+                font-size: 18px;
+              }
+            }
+          }
+          .clubs {
+            text-align: center;
+            .clubs-info {
+              .clubs-number {
+                font-size: 18px;
+              }
+            }
+          }
+          .events-booking {
+            text-align: center;
+            .events-booking-info {
+              .events-booking-number {
+                font-size: 18px;
+              }
+            }
+          }
+          .payments {
+            text-align: center;
+            .payments-info {
+              .payments-number {
+                font-size: 18px;
+              }
+            }
+          }
+
+          p {
+            color: #717171;
+            font-size: 12px;
+          }
+
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .vietduc-products-calender {
+    .products-container {
+      margin: 5%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .img-calender {
+        margin: 0 5% 3%;
+        text-align: center;
+        img {
+          width: 75%;
+          height: auto;
+          border-radius: 5%;
+        }
+      }
+      .content-calender {
+        padding: 0 4%;
+
+        .title-calender {
+          color: #4d4d4d;
+          font-size: 24px;
+          font-weight: 600;
+        }
+
+        .discreption-calender {
+          margin: 20px 0;
+          color: #717171;
+          font-size: 12px;
+        }
+
+        .btn-calender {
+          color: #e0e0e0;
+          width: 100px;
+          height: 34px;
+          background-color: #4caf4f;
+          border: 2px solid #ffffff;
+        }
+      }
+    }
+  }
 }
   
+
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  
+  .vietduc-products-achievements {
+    margin-bottom: 50px;
+    background-color: #F5F7FA;
+    padding: 50px 0;
+
+    .products-container {
+      margin: 0 5%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .section-heading {
+        .section-title {
+          font-size: 36px;
+          color: #4d4d4d;
+          p {
+            font-size: 36px;
+            color: #007a40;
+          }
+        }
+        .description {
+          font-weight: 400;
+        }
+      }
+      .counts {
+        width: 35%;
+        padding-left: 5%;
+        .column-products {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          color: #4d4d4d;
+          .members {
+            display: flex;
+            justify-content: space-between;
+          }
+          .clubs {
+            display: flex;
+          }
+          .events-booking {
+            display: flex;
+          }
+          .payments {
+            display: flex;
+          }
+
+          p {
+            color: #717171;
+          }
+
+          img {
+            margin-right: 15px;
+          }
+        }
+        .column-products-1 {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .vietduc-products-calender {
+    .products-container {
+      margin: 5%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .img-calender {
+        margin: 0 5% 3%;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 5%;
+        }
+      }
+      .content-calender {
+        padding: 0 4%;
+
+        .title-calender {
+          color: #4d4d4d;
+          font-size: 36px;
+          font-weight: 600;
+        }
+
+        .discreption-calender {
+          margin: 20px 0;
+          color: #717171;
+          font-size: 14px;
+        }
+
+        .btn-calender {
+          color: #e0e0e0;
+          width: 151px;
+          height: 52px;
+          background-color: #4caf4f;
+          border: 2px solid #ffffff;
+        }
+      }
+    }
+  }
+} */
+
+/* @media (max-width: 767px) {
+  .vietduc-products-achievements {
+    margin-bottom: 50px;
+    background-color: #F5F7FA;
+    padding: 50px 0;
+
+    .products-container {
+      margin: 0 5%;
+      text-align: center;
+      .section-heading {
+        margin-bottom: 5%;
+        .section-title {
+          font-size: 36px;
+          color: #4d4d4d;
+          p {
+            font-size: 36px;
+            color: #007a40;
+          }
+        }
+        .description {
+          font-weight: 400;
+        }
+      }
+      .counts {
+        display: flex;
+        justify-content: space-around;
+        .column-products {
+          width: 50%;
+          display: flex;
+          justify-content: space-around;
+          color: #4d4d4d;
+          .members {
+            text-align: center;
+          }
+          .clubs {
+            text-align: center;
+          }
+          .events-booking {
+            text-align: center;
+            
+          }
+          .payments {
+            text-align: center;
+          }
+
+          p {
+            color: #717171;
+          }
+
+          img {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .vietduc-products-calender {
+    .products-container {
+      margin: 5%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .img-calender {
+        margin: 0 5% 3%;
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 5%;
+        }
+      }
+      .content-calender {
+        padding: 0 4%;
+
+        .title-calender {
+          color: #4d4d4d;
+          font-size: 36px;
+          font-weight: 600;
+        }
+
+        .discreption-calender {
+          margin: 20px 0;
+          color: #717171;
+          font-size: 14px;
+        }
+
+        .btn-calender {
+          color: #e0e0e0;
+          width: 151px;
+          height: 52px;
+          background-color: #4caf4f;
+          border: 2px solid #ffffff;
+        }
+      }
+    }
+  }
+} */
+
