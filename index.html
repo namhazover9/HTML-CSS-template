@@ -6,25 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 <body>
-    <!-- <nav class="navbar">
-        <div class="logo">
-          <img src="/images/Logo.png" alt="Nexcent Logo"> 
-        </div>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Feature</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Testimonial</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-        <div class="auth-buttons">
-          <a href="#" class="login">Login</a>
-          <a href="#" class="signup">Sign up</a>
-        </div>
-      </nav> -->
-
-    <!-- Section hoangnam-Testimonial-customers -->
+    
+    <!-- --------------------------- TESTIMONIAL Section - hoangnam------------------------------ -->
     <section id="hoangnam-testimonial-customers" class="hoangnam-testimonial-customers">
       <div>
         <div class="testimonial-content">
@@ -75,26 +58,30 @@
       </div>
     </div>
   </div>
+  <!-- --------------------------- END OF TESTIMONIAL Section - hoangnam------------------------------ -->
+  
 </section>
-      <script>
-        var imgages = document.querySelector('.content-image');
-        var imageList =  ['images/community-img1.jpg', 'images/community-img2.jpg', 'images/community-img3.jpg'];
-        var readmorelist = ['Creating Streamlined Safeguarding Processes with OneRen', 
-                            'What are your safeguarding responsibilities and how can you manage them?',
-                            'Revamping the Membership Model with Triathlon Australia'];
-      
-        imageList.map((value, index) => {
-          imgages.innerHTML += `
-          <div class="card">
-              <img src="${value}" alt="Image">
-              <div class="card-content">
-                <h3>${readmorelist[index]}</h3>
-                <a style="color: #4CAF4F" href="#" class="readmore">Readmore →</a>
-              </div>
-            </div>
-          `;
-        });
-      </script>
+
+<!-- --------------------------- TESTIMONIAL Section - hoangnam------------------------------ -->
+  <script>
+    var imgages = document.querySelector('.content-image');
+    var imageList =  ['images/community-img1.jpg', 'images/community-img2.jpg', 'images/community-img3.jpg'];
+    var readmorelist = ['Creating Streamlined Safeguarding Processes with OneRen', 
+                        'What are your safeguarding responsibilities and how can you manage them?',
+                        'Revamping the Membership Model with Triathlon Australia'];
+  
+    imageList.map((value, index) => {
+      imgages.innerHTML += `
+      <div class="card">
+          <img src="${value}" alt="Image">
+          <div class="card-content">
+            <h3>${readmorelist[index]}</h3>
+            <a style="color: #4CAF4F" href="#" class="readmore">Readmore →</a>
+          </div>
+        </div>
+      `;
+    });
+  </script>
 </body>
 
 </html>
