@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -170,50 +172,44 @@ body {
 }
 
 .content-service {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
 }
-
 .text-section-service {
-    max-width: 50%;
+  max-width: 50%;
 }
-
 .text-section-service h1{
-  color: #4D4D4D;
-  font-size: 50px;
-  font-weight: bold;
+color: #4D4D4D;
+font-size: 50px;
+font-weight: bold;
 }
-
 .text-section-service span{
-  color: #4CAF4F;
-  font-size: 50px;
-  font-weight: bold;
+color: #4CAF4F;
+font-size: 50px;
+font-weight: bold;
 }
-
 .text-section-service p{
-  color: #717171;
-  font-size: 15px;
-  margin-top: 20px;
+color: #717171;
+font-size: 15px;
+margin-top: 20px;
 }
-
 .text-section-service button {
-  color: #ffffff;
-  font-size: 1em;
-  background-color: #4CAF4F;
-  margin-top: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
-  width: 8em; /* Đặt chiều rộng cố định cho button */
-  height: 3em;
+color: #FFFFFF;
+font-size: 1em;
+background-color: #4CAF4F;
+margin-top: 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+outline: none;
+width: 8em; /* Đặt chiều rộng cố định cho button */
+height: 3em;
 }
-
 .image-section-service img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .dots-container {
@@ -246,6 +242,65 @@ body {
   display: none;
   font-size: 30px;
   cursor: pointer;
+}
+
+/* -------------------------------------------------Feature Section----------------------------------- */
+.dh-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dh-illustration {
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.dh-illustration img {
+  height: auto;
+  width: auto;
+}
+
+.dh-content {
+  width: 50%;
+  margin: auto;
+  text-align: justify;
+  background-color: #fff;
+}
+
+.dh-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #4D4D4D;
+}
+
+.dh-description {
+  font-size: 14px;
+  color: #717171;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.dh-button {
+  padding: 10px 20px;
+  background-color: #4CAF4F;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.dh-button:hover {
+  background-color: #45a049;
 }
 
 /*----------------------------------- PRODUCT SECTION - Việt Đức--------------------------------- */
@@ -340,6 +395,7 @@ body {
         color: #e0e0e0;
         width: 151px;
         height: 52px;
+        border-radius: 5px;
         background-color: #4caf4f;
         border: 2px solid #ffffff;
       }
